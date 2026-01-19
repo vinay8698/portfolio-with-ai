@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono&display=swap');
+
+:root {
+  /* Default Dark Theme Variables */
+  --bg-primary: #0a192f;
+  --bg-secondary: #112240;
+  --text-primary: #e6f1ff;
+  /* formerly --text-primary */
+  --text-secondary: #a8b2d1;
+  /* formerly --text-secondary */
+  --text-tertiary: #8892b0;
+  /* formerly --text-tertiary */
+  --accent: #64ffda;
+  /* formerly --accent */
+  --accent-tint: rgba(100, 255, 218, 0.1);
+  --line: #233554;
+  /* formerly --line */
+
+  --shadow-color: rgba(2, 12, 27, 0.7);
+
+  /* Fonts */
+  --font-sans: 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
+  --font-mono: 'Roboto Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+
+  /* Sizes */
+  --fz-xxs: 12px;
+  --fz-xs: 13px;
+  --fz-sm: 14px;
+  --fz-md: 16px;
+  --fz-lg: 18px;
+  --fz-xl: 20px;
+  --fz-xxl: 22px;
+  --fz-heading: 32px;
+  --border-radius: 4px;
+
+  --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+[data-theme='light'] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f6f8fa;
+  --text-primary: #1d1d1f;
+  --text-secondary: #424242;
+  --text-tertiary: #575757;
+  --accent: #0f766e;
+  /* Teal-700 - Sharp and professional */
+  --accent-tint: rgba(15, 118, 110, 0.1);
+  --line: #e1e4e8;
+
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--bg-primary);
+  color: var(--text-tertiary);
+  font-family: var(--font-sans);
+  font-size: var(--fz-xl);
+  line-height: 1.3;
+  transition: background-color 0.25s var(--easing), color 0.25s var(--easing);
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  transition: var(--transition);
+}
+
+a:hover,
+a:focus {
+  color: var(--accent);
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 0;
+}
+
+section {
+  max-width: 1000px;
+  margin: 0 auto 50px;
+  padding: 60px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 10px 0;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.1;
+}
+
+.big-heading {
+  margin: 0;
+  font-size: clamp(40px, 8vw, 80px);
+}
+
+.numbered-heading {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 10px 0 40px;
+  width: 100%;
+  font-size: clamp(26px, 5vw, 32px);
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+
+.numbered-heading::before {
+  position: relative;
+  bottom: 4px;
+  counter-increment: section;
+  content: "0" counter(section) ".";
+  margin-right: 10px;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: clamp(16px, 3vw, 20px);
+  font-weight: 400;
+}
+
+.numbered-heading::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: -5px;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: var(--line);
+}
+
+/* Scrollbar Styles */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--text-tertiary) var(--bg-primary);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--text-tertiary);
+  border: 3px solid var(--bg-primary);
+  border-radius: 10px;
+}
+
+/* Utilities */
+.text-green {
+  color: var(--accent);
+}
+
+/* Keeping class name for compatibility, updating value */
+.text-white {
+  color: var(--text-primary);
+}
+
+.text-slate {
+  color: var(--text-tertiary);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}

@@ -1,0 +1,25 @@
+.App {
+    min-height: 100vh;
+}
+
+.content {
+    padding: 0 150px;
+}
+
+@media (max-width: 1080px) {
+    .content {
+        padding: 0 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 0 25px;
+    }
+}

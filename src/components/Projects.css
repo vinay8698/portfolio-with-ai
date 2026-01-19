@@ -1,0 +1,111 @@
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    position: relative;
+    margin-top: 50px;
+    padding: 0;
+    list-style: none;
+}
+
+.project-card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    height: 100%;
+    padding: 2rem 1.75rem;
+    background-color: var(--bg-secondary);
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+    transition: var(--transition);
+    overflow: auto;
+}
+
+.project-card:hover {
+    box-shadow: 0 20px 30px -15px rgba(2, 12, 27, 0.7);
+}
+
+.project-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    width: 100%;
+}
+
+.folder {
+    color: var(--accent);
+}
+
+.folder svg {
+    width: 40px;
+    height: 40px;
+}
+
+.project-links {
+    display: flex;
+    align-items: center;
+    color: var(--text-secondary);
+}
+
+.project-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 7px;
+}
+
+.project-links a:hover {
+    color: var(--accent);
+}
+
+.project-links svg {
+    width: 20px;
+    height: 20px;
+}
+
+.project-title {
+    margin: 0 0 10px;
+    color: var(--lightest-slate);
+    font-size: var(--fz-xxl);
+}
+
+.project-title a {
+    position: static;
+}
+
+.project-title a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.project-description {
+    color: var(--text-secondary);
+    font-size: var(--fz-md);
+}
+
+.project-tech-list {
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 20px 0 0 0;
+    list-style: none;
+}
+
+.project-tech-list li {
+    font-family: var(--font-mono);
+    font-size: var(--fz-xxs);
+    line-height: 1.75;
+    margin-right: 15px;
+    color: var(--text-tertiary);
+}

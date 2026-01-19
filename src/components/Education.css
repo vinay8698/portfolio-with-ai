@@ -1,0 +1,57 @@
+.education-card {
+    background-color: var(--bg-secondary);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+    border-left: 2px solid var(--accent);
+}
+
+.education-card h3 {
+    font-size: var(--fz-xl);
+    color: var(--lightest-slate);
+}
+
+.education-card .school {
+    color: var(--text-primary);
+    font-size: var(--fz-lg);
+    margin-bottom: 5px;
+}
+
+.education-card .year {
+    color: var(--text-tertiary);
+    font-family: var(--font-mono);
+    font-size: var(--fz-sm);
+    margin-bottom: 10px;
+}
+
+.education-card .cgpa {
+    color: var(--text-tertiary);
+    font-weight: bold;
+}
+
+.cert-heading {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: var(--fz-xl);
+    color: var(--text-primary);
+}
+
+.cert-list {
+    list-style: none;
+    padding: 0;
+}
+
+.cert-list li {
+    font-family: var(--font-mono);
+    color: var(--text-tertiary);
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.cert-list li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+}
