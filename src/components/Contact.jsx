@@ -35,8 +35,8 @@ const Contact = () => {
                         <span>+91 9158096089</span>
                     </div>
                     <div className="detail-item socials">
-                        <a href="https://linkedin.com" target="_blank" rel="noreferrer"><FaLinkedin /></a>
-                        <a href="https://github.com" target="_blank" rel="noreferrer"><FaGithub /></a>
+                        <a href='https://www.linkedin.com/in/vinodkumar-kanike' target="_blank" rel="noreferrer"><FaLinkedin /></a>
+                        <a href="https://github.com/vinodkumar8698" target="_blank" rel="noreferrer"><FaGithub /></a>
                     </div>
                 </div>
 
