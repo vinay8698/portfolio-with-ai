@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
-import { FaBars, FaTimes, FaLinkedin, FaGithub, FaGlobe } from 'react-icons/fa';
+import { FaBars, FaTimes, FaLinkedin, FaGithub } from 'react-icons/fa';
 import ThemeToggle from './ThemeToggle';
 import './Navbar.css';
 
