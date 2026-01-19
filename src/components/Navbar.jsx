@@ -108,10 +108,8 @@ const Navbar = () => {
                                 {icon}
                             </a>
                         ))}
-                    </div>
-                    <li>
                         <ThemeToggle />
-                    </li>
+                    </div>
                 </ul>
             </div>
         </motion.nav>
