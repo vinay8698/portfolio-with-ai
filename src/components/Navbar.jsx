@@ -36,7 +36,7 @@ const Navbar = () => {
     const socialLinks = [
         { id: 1, icon: <FaLinkedin size={20} />, url: 'https://www.linkedin.com/in/vinodkumar-kanike' },
         { id: 2, icon: <FaGithub size={20} />, url: 'https://github.com/vinodkumar8698' },
-        { id: 3, icon: <FaGlobe size={20} />, url: 'https://portfolio-vinodkumar8698.vercel.app/' },
+        // { id: 3, icon: <FaGlobe size={20} />, url: 'https://portfolio-vinodkumar8698.vercel.app/' },
     ];
 
     return (
