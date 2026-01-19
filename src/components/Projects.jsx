@@ -10,21 +10,21 @@ const Projects = () => {
             description: 'Built scalable frontend components for Verizon’s digital sales platform. Implemented secure, type-safe APIs using TypeScript and TanStack Query. Optimized performance using SSR, lazy loading, and dynamic imports. Improved product listing, cart flow, and checkout experience.',
             tech: ['Next.js', 'React', 'TypeScript', 'TanStack Query', 'CSS'],
             github: '#',
-            external: '#'
+            external: 'https://www.verizon.com/'
         },
         {
             title: 'Automatic Trading App – Kotak Neo',
             description: 'Built trading strategy management system with realtime execution. Created multi-strategy UI with custom entry and exit conditions. Developed live control panel with Start, Pause, Resume actions.',
             tech: ['ReactJS', 'NodeJS', 'WebSockets', 'SCSS'],
             github: '#',
-            external: '#'
+            external: 'https://www.kotakneo.com/bulletins/automate-your-option-strategies-with-strategy-bot/'
         },
         {
             title: 'WeLinkJobs – Social Media Platform',
             description: 'Built LinkedIn-style professional networking platform. Implemented posts, reactions, comments, and live feeds. Optimized performance using throttling and lazy loading.',
             tech: ['ReactJS', 'SCSS', 'JavaScript'],
             github: '#',
-            external: '#'
+            external: 'https://www.welinkjobs.com/'
         }
     ];
 
